@@ -1,0 +1,19 @@
+<html>
+<body>
+    <h2>Hotel Recommendation System</h2>
+
+    <form action="/predict" method="POST">
+        <label>Feature 1:</label>
+        <input type="text" name="feature1"><br>
+
+        <label>Feature 2:</label>
+        <input type="text" name="feature2"><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <h3>Prediction: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
