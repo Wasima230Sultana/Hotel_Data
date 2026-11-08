@@ -26,6 +26,10 @@
 
     <hr>
 
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
     {% if hotels %}
         <h3>Recommended Hotels:</h3>
         <ul>
